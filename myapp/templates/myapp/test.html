@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violation History</title>
+</head>
+<body>
+    <h1>Violation History</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Column1</th> <!-- Replace Column1, Column2, ... with actual column names -->
+                <th>Column2</th>
+                <!-- Add more columns if needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row.id }}</td> <!-- Assuming 'id' is the primary key column -->
+                <td>{{ row.column1 }}</td> <!-- Replace 'column1' with actual column name -->
+                <td>{{ row.column2 }}</td>
+                <!-- Add more columns if needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
